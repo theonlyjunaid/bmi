@@ -1,11 +1,12 @@
 {
   "expo": {
-    "name": "health-calculator",
+    "name": "BMI Calculator",
     "slug": "health-calculator",
+    "description": "Calculate and evaluate your Body Mass Index (BMI), Ideal Weight, and Body Fat Percentage based on weight, height, age and sex. Find your ideal weight and check if you're at risk for health conditions. Uses WHO BMI classifications. Track your weight loss journey and maintain a healthy lifestyle.",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "myapp",
+    "scheme": "bmi-calculator",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
@@ -13,21 +14,22 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "foregroundImage": "./assets/images/icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.theonlyjunaid.bmicalculator"
     },
     "web": {
       "bundler": "metro",
       "output": "static",
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./assets/images/icon.png"
     },
     "plugins": [
       "expo-router",
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/splash-icon.png",
+          "image": "./assets/images/icon.png",
           "imageWidth": 200,
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
@@ -36,6 +38,14 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "f5eae6e1-3e63-4b36-a9f4-a0d3a8bc8e90"
+      }
     }
   }
 }
